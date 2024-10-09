@@ -122,8 +122,8 @@ iframe {
 
 .albums-slideshow .single-album:hover, .albums-slideshow .single-album:focus {
   border: 1px solid #00000000;
-  box-shadow: 2px solid #008291;
-  background-color: #008291;
+  box-shadow: 2px solid #e9ae73;
+  background-color: #e9ae73;
 }
 
 .gallery-description a:hover {
@@ -131,6 +131,9 @@ iframe {
   text-decoration: underline;
 }
 
+.single-album .album-info h5:hover {
+  color: #000000;
+}
 
 
 
