@@ -7,9 +7,8 @@ COPY nginx/nginx.conf /etc/nginx/nginx.conf
 # Copiar los archivos del sitio a la carpeta predeterminada de Nginx
 COPY . /usr/share/nginx/html
 
-# Exponer el puerto 80
+# Exponer el puerto 8000
 EXPOSE 8000
 
 # Comando para iniciar Nginx
 CMD ["nginx", "-g", "daemon off;"]
-
