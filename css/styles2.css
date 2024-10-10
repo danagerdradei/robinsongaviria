@@ -39,17 +39,22 @@
   padding-top: 230px;
 }
 
-
-/* line 4, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
-.breadcam_bg_5 {
-  background-image: url(../img/core-img/mixticius/unsueno.jpg);
-}
-
-
-/* line 10, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
+/* LOS GIGANTES */
 .breadcam_bg_4 {
-  background-image: url(../img/otros/Web-img/Baner/15-3.png);
+  background-image: url(../img/core-img/Gigantes/NaturalezaYConcienza-min.png);
 }
+
+/* OBRAS PERSONALIZADAS */
+.breadcam_bg_5 {
+  background-image: url(../img/core-img/PinturasPersonalizadas/yisus-min.png);
+}
+
+/* RETRATOS */
+.breadcam_bg_6 {
+  background-image: url(../img/core-img/RETRATOS/6-min.png);
+}
+
+
 
 :root {
   --animate-duration: 800ms;
