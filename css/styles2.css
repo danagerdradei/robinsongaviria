@@ -28,20 +28,23 @@
   background-image: url(../img/core-img/About/rg2.jpg);
 }
 
-/* line 4, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
+/* ARTE DIGITAL */
 .breadcam_bg_2 {
-  background-image: url(../img/core-img/mixticius/unsueno.jpg);
+  background-image: url(../img/core-img/Artedigital/aquayluna.JPG);
 }
+
+/* LOS ELEMENTALES */
+.breadcam_bg_3 {
+  background-image: url(../img/core-img/LosElementales/eldespertar.png);
+  padding-top: 230px;
+}
+
 
 /* line 4, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .breadcam_bg_5 {
   background-image: url(../img/core-img/mixticius/unsueno.jpg);
 }
 
-/* line 7, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
-.breadcam_bg_3 {
-  background-image: url(../img/otros/Web-img/Baner/15-3.png);
-}
 
 /* line 10, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .breadcam_bg_4 {
