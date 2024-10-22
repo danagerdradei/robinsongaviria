@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-redes {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.redes-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Vertical por defecto para móviles */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+.icon {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6.7rem;
+}
+
+/* Media Queries para pantallas móviles */
+@media (max-width: 768px) {
+    .icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .icon i {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .icon i {
+        font-size: 3.5rem;
+    }
+
+    .section-redes {
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+/* Media query para pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+    .redes-btn {
+        flex-direction: row; /* Horizontal en pantallas grandes */
+        gap: 40px; /* Más espacio entre íconos para pantallas grandes */
+    }
+}
