@@ -221,6 +221,20 @@
         </div>
     </div>
 
+    <!-- Inserta este div en tu HTML donde desees que aparezca el botón de sonido -->
+    <div id="sound-control">
+        <div class="audio-none">
+            <audio id="background-music" loop autoplay>
+                <source src="../audio/dummy-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
+        <button id="sound-toggle">
+            <span id="sound-icon">🔊</span>
+        </button>
+    </div>
+
     <!-- Modal 1 -->
     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -516,6 +530,7 @@
     <script src="../js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="../js/active.js"></script>
+    <script src="../audio/audio.js"></script>
 
 
 	<script src="../js/main.js"></script>

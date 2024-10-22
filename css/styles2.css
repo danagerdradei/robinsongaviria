@@ -56,10 +56,47 @@
 
 
 
-:root {
-  --animate-duration: 800ms;
-  --animate-delay: 0.9s;
+#sound-control {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
 }
+
+
+#sound-toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e9ae73;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.audio-none{
+  display: none;
+}
+
+#sound-toggle:hover {
+  background-color: #000;
+  transform: scale(1.1);
+}
+
+#sound-icon {
+  font-size: 24px;
+  color: #000;
+}
+
+#sound-toggle:focus {
+  outline: none;
+  background-color: #e9ae73;
+}
+
 /*CAMBIOS DE ROBINSON -------------------------------------------------------------------------------------------------------------*/
 
 
@@ -94,11 +131,52 @@ iframe {
   border-radius: 10px;
 }
 
-.gallery-description a {
+.header-area .oneMusic-main-menu .classy-navbar .classynav ul li a {
+  font-weight: 700;
+  text-transform: capitalize;
   color: #ffffff;
+  font-size: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.header-area .oneMusic-main-menu .classy-navbar .classynav ul li.megamenu-item ul li > a::after, .header-area .oneMusic-main-menu .classy-navbar .classynav ul li.has-down ul li > a::after {
+  color: #232323;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gallery-description a {
   text-decoration: none;
-  font-size: 20px;
   transition: color 0.3s ease;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent; 
 }
 /* Fondo del modal con color oscuro */
 .modal-content {
@@ -130,8 +208,8 @@ iframe {
 
 .albums-slideshow .single-album:hover, .albums-slideshow .single-album:focus {
   border: 1px solid #00000000;
-  box-shadow: 2px solid #e9ae73;
-  background-color: #e9ae73;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+  background: linear-gradient(180deg, #e9ae73 0%, #31261e 100%); 
 }
 
 .gallery-description a:hover {
@@ -314,10 +392,10 @@ li {
 
 /* line 61, ../../Arafath/CL/Cl November/221. Music/HTML/scss/theme-default.scss */
 p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 28px;
-  color: #ffffff;
+  color: #a8a8a8;
   margin-bottom: 13px;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -3425,13 +3503,44 @@ h3 {
 }
 
 /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
+
 .bradcam_area h3 {
   font-size: 60px;
-  color: #e9ae73;
   font-weight: 400;
   margin-bottom: 0;
   text-transform: uppercase;
+  background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent; 
 }
+
+.section-heading h2{
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent; 
+}
+
+.single-album .album-info h5 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent; 
+}
+
+
 
 @media (max-width: 767px) {
   /* line 39, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
