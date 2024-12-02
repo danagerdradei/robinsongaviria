@@ -3,6 +3,9 @@
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_extend.scss */
 
 /*CAMBIOS DE ROBINSON -------------------------------------------------------------------------------------------------------------*/
+.title-home{
+  padding-top: 50px;
+}
 .slider-testimonial2 {
   position: relative;
   width: 100%;
