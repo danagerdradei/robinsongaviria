@@ -11,10 +11,9 @@
 }
 
 .testimonial-section h2 {
-    font-size: 3em;
-    color: #fff;
-    margin-bottom: 0.5em;
-    font-size: 60px;
+    font-size: 20px;
+    color: #a8a8a8;
+    margin-bottom: 13px;
     font-weight: 400;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -26,8 +25,12 @@
 }
 
 .testimonial-section p {
-    color: #fff;
-    font-size: 1em;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #a8a8a8;
+    margin-bottom: 13px;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .testimonial-slider {
@@ -47,6 +50,7 @@
     flex: 0 0 100%;
     text-align: center;
     padding: 5em;
+    background-color: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
 }
 
 .testimonial-item img {
@@ -60,12 +64,14 @@
     color: #fff;
     font-size: 1.2em;
     margin-bottom: 0.5em;
+    background-color: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
 }
 
 .testimonial-item p {
     font-size: 0.9em;
     color: #fff;
     line-height: 1.5;
+    background-color: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
 }
 
 button.prev,
@@ -73,7 +79,7 @@ button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #f9a825;
+    background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
     border: none;
     padding: 0.5em 1em;
     color: #fff;
