@@ -50,7 +50,7 @@ body {
     box-shadow: 0 0 20px #1da1f2;
 }
 
-.icon i {
+.icon a {
     color: #fff;
     position: absolute;
     top: 50%;
@@ -75,7 +75,7 @@ body {
         height: 120px;
     }
 
-    .icon i {
+    .icon a {
         font-size: 5rem;
     }
 }
@@ -86,7 +86,7 @@ body {
         height: 90px;
     }
 
-    .icon i {
+    .icon a {
         font-size: 3.5rem;
     }
 
