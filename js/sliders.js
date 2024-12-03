@@ -3,7 +3,7 @@ var swiper = new Swiper('.swiper-container', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
-    initialSlide: 1,
+    initialSlide: 2,
     coverflowEffect: {
         rotate: 30, // Disminuí el ángulo de rotación
         stretch: 0,
