@@ -3,8 +3,40 @@
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_extend.scss */
 
 /*CAMBIOS DE ROBINSON -------------------------------------------------------------------------------------------------------------*/
+
+#scrollUp:hover {
+  background-color: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+  color: #000000;
+  background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+}
+
+#scrollUp {
+  background-color: #000000;
+  border-radius: 50%;
+  bottom: 50px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  right: 50px;
+  text-align: center;
+  width: 40px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
 .title-home{
   padding-top: 50px;
+}
+
+.parrafo-info{
+
+    font-size: 28px !important;
+    line-height: 28px !important;
+    margin-top: 17px !important;
+    margin-bottom: 40px !important;
 }
 .slider-testimonial2 {
   position: relative;
@@ -21,7 +53,7 @@
 
 .swiper-container {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 1px;
   padding-bottom: 50px;
 }
 
@@ -60,7 +92,7 @@
 .testimonialBox .details {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .testimonialBox .details .imgBx {
@@ -1768,8 +1800,8 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .about_area {
-  padding-top: 150px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -6078,7 +6110,7 @@ h6 {
 
 /* line 1089, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
 .section-top-border {
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
 /* line 1093, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_elements.scss */
