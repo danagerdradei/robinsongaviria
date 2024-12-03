@@ -11,9 +11,18 @@
 }
 
 .testimonial-section h2 {
-    font-size: 2em;
+    font-size: 3em;
     color: #fff;
     margin-bottom: 0.5em;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .testimonial-section p {
@@ -48,7 +57,7 @@
 }
 
 .testimonial-item h3 {
-    color: #f9a825;
+    color: #fff;
     font-size: 1.2em;
     margin-bottom: 0.5em;
 }

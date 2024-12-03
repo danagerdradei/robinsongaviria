@@ -3,6 +3,30 @@
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_extend.scss */
 
 /*CAMBIOS DE ROBINSON -------------------------------------------------------------------------------------------------------------*/
+.oneMusic-btn {
+  background-color: #fff;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 212px;
+  height: 49px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 47px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.oneMusic-btn:hover, .oneMusic-btn:focus {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  background-color: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%) !important;
+}
 
 #scrollUp:hover {
   background-color: linear-gradient(180deg, #6e3b1b 0%, #e9ae73 100%);
