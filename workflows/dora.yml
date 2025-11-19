@@ -1,0 +1,58 @@
+name: DORA from GitHub
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 2 * * *"   # corre diario 02:15 UTC
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  actions: read
+  deployments: read
+  pull-requests: read
+
+env:
+  OWNER: your-org-or-user
+  REPO: your-repo
+  ENVIRONMENT: production
+  WINDOW_DAYS: "30"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  dora:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dateutil
+
+      - name: Run DORA metrics
+        run: python .github/scripts/dora_github.py
+
+      - name: Job summary
+        if: always()
+        run: |
+          echo "## DORA (últimos ${WINDOW_DAYS} días)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Se generaron **dora_metrics.csv**, **dora_pr_lead_times.csv** y **dora_latest.json**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat dora_table.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dora-metrics
+          path: |
+            dora_metrics.csv
+            dora_pr_lead_times.csv
+            dora_latest.json
+            dora_table.md
