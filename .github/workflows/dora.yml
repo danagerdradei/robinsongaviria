@@ -14,8 +14,8 @@ permissions:
   pull-requests: read
 
 env:
-  OWNER: your-org-or-user
-  REPO: your-repo
+  OWNER: danagerdradei
+  REPO: robinsongaviria
   ENVIRONMENT: production
   WINDOW_DAYS: "30"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
