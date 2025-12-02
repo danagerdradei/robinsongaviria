@@ -1,0 +1,29 @@
+name: Production Deploy
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://tu-url-produccion.com
+    permissions:
+      contents: read
+      deployments: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci --ignore-scripts || echo "skip npm ci"
+      - run: npm run build --if-present
+
+      - name: Deploy to production
+        run: |
+          echo "Desplegando a producción"
+          # Coloca aquí tu comando de deploy
