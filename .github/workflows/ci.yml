@@ -11,4 +11,4 @@ jobs:
       - name: Validate repository
         shell: bash
         run: |
-          echo "Repo OK"
+          echo Repo OK

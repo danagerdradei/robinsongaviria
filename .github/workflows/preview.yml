@@ -17,4 +17,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Mark preview deployment
         shell: bash
-        run: echo 'Preview deployment registrado para PR #${{ github.event.pull_request.number }}'
+        run: |
+          echo Preview deployment PR \#${{ github.event.pull_request.number }}

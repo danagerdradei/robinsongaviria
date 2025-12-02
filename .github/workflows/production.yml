@@ -17,4 +17,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Mark production deployment
         shell: bash
-        run: echo 'Production deployment registrado para commit ${{ github.sha }}'
+        run: |
+          echo Production deployment commit ${{ github.sha }}
