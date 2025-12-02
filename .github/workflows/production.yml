@@ -1,0 +1,21 @@
+name: Production Deploy
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://robinsongaviria.onrender.com
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mark production deployment
+        shell: bash
+        run: |
+          echo Production deployment commit ${{ github.sha }}
