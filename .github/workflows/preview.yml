@@ -9,23 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: preview
-      url: https://tu-preview-url.com/${{ github.event.pull_request.number }}
+      url: https://robinsongaviria.onrender.com
     permissions:
       contents: read
       deployments: write
-      id-token: write
     steps:
       - uses: actions/checkout@v4
-
-      # Build según tu stack (ajusta estos pasos)
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm ci --ignore-scripts || echo "skip npm ci"
-      - run: npm run build --if-present
-
-      # Paso real de deploy (ajústalo: Pages, bucket, server, etc.)
-      - name: Deploy preview
-        run: |
-          echo "Desplegando preview para PR #${{ github.event.pull_request.number }}"
-          # Coloca aquí tu comando de deploy
+      - name: Mark preview deployment
+        run: echo "Preview deployment registrado para PR #${{ github.event.pull_request.number }}"
